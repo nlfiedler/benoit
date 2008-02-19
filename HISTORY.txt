@@ -1,0 +1,39 @@
+BENOIT HISTORY
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$Id: HISTORY.txt 1029 2003-11-11 23:59:18Z nfiedler $
+
+2.2
+- Fixed bug 776: percent complete for big decimal renderer would roll
+  from zero to 20 fives times, once for each step of the refinement.
+- Centered the main window by default, sizing to fit the screen if it
+  is too small for the default window size.
+
+2.1 - July 2, 2002
+- Back and forward buttons are enabled and disabled appropriately.
+- Window is now resizable and image is shown in a scroll pane.
+- Added ability to open more than one window at a time.
+- Fixed yet another mistake in which doubles were used instead of
+  BigDecimal. Now big-decimal computation is extremely slow.
+- The BigDecimal renderer uses successive-refinement to display
+  region, rather than the recursive rectangles algorithm.
+- Added a few more interesting presets.
+
+2.0 - June 26, 2002
+- Actually uses a good design this time around.
+- Uses a decent color scheme for the first time.
+- Corrected a problem in which the parameters were always doubles,
+  despite what may have been selected in the menu. Now we find out
+  that rendering with BigDecimals is extremely slow.
+- Now just supports doubles and BigDecimal with arbitrary scale.
+- Eliminated the multiple window interface in favor of just the
+  main window.
+- Defaults to larger 640x492 image resolution. Window is not resizable.
+- Now uses a region history, like a browser history, with limited
+  image caching.
+- Contains presets to view interesting parts of the set.
+
+1.1 - March 13, 1999
+- Applied the GNU General Public License to Benoit.
+
+1.0 - September 23, 1998
+- First numbered release.
